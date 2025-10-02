@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şans Çarkı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tema değiştirme butonu -->
+    <div class="theme-toggle">
+        <button id="themeBtn" class="theme-btn">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sol Panel -->
+        <div class="left-panel">
+            <div class="info-box">
+                <p class="play-instruction">Çevire ▶ bas ve çarkı çevir!</p>
+            </div>
+
+            <div class="count-box">
+                <p>Seçenek sayısı: <span id="optionCount">0</span></p>
+            </div>
+
+            <div class="bulk-toggle">
+                <span>Toplu Seçenek Gir</span>
+                <label class="switch">
+                    <input type="checkbox" id="bulkToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="optionInput" placeholder="Çarka seçenek ekleyin">
+                <button id="addBtn" class="btn-add">Ekle</button>
+            </div>
+
+            <div class="options-list">
+                <ul id="optionsUl"></ul>
+            </div>
+
+            <button id="resetBtn" class="btn-reset hidden">Yeni Oyun</button>
+        </div>
+
+        <!-- Sağ Panel - Çark -->
+        <div class="right-panel">
+            <div class="wheel-container">
+                <div class="wheel-pointer">◀</div>
+                <canvas id="wheelCanvas" width="600" height="600"></canvas>
+                <button id="spinBtn" class="spin-center-btn" disabled>▶</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kazanan Modal -->
+    <div class="winner-modal hidden" id="winnerModal">
+        <div class="modal-content">
+            <h2>🎉 Kazanan 🎉</h2>
+            <p class="winner-text" id="winnerText"></p>
+            <div class="modal-buttons">
+                <button id="spinAgainBtn" class="btn-primary">Tekrar Çevir</button>
+                <button id="newGameBtn" class="btn-secondary">Yeni Oyun</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
