@@ -31,7 +31,7 @@ Modern ve etkileşimli bir şans çarkı uygulaması. Kullanıcılar kendi seçe
 ### Kurulum
 1. Repoyu klonlayın veya indirin:
 ```bash
-git clone https://github.com/kullaniciadi/sans-carki.git
+git clone https://github.com/Resfiu/sans-carki.git
 ```
 
 2. `index.html` dosyasını bir tarayıcıda açın:
@@ -110,10 +110,6 @@ sans-carki/
 - [ ] PDF/Resim olarak dışa aktarma
 - [ ] Paylaşım özellikleri
 
-## 📝 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
 ## 👨‍💻 Geliştirici
 
 Sorularınız veya önerileriniz için issue açabilirsiniz.
@@ -140,3 +136,4 @@ Gerçekçi dönüş animasyonu ve kazanan belirleme.
 ---
 
 ⭐ Beğendiyseniz yıldız vermeyi unutmayın!
+
